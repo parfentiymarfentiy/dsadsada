@@ -1,0 +1,1319 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Extreme Sport Одесса | Спортивные товары — Бокс, MMA, Футбол, Единоборства</title>
+<meta name="description" content="Магазин спортивных товаров Extreme Sport в Одессе. Боксёрские перчатки RDX, VENUM, EVERLAST, форма для единоборств MMA, компрессионная одежда, футбольная форма, защита, мячи. Пантелеймоновская 25, 3 этаж, ТЦ «Новый Привоз». Доставка по Украине."/>
+<meta name="keywords" content="спортивные товары Одесса, боксёрские перчатки Одесса, MMA перчатки, форма для единоборств, компрессионная одежда, защита голени, футбольная форма Одесса, Extreme Sport Одесса, ТЦ Новый Привоз, купить боксёрские перчатки, RDX перчатки, VENUM Одесса"/>
+<meta name="robots" content="index, follow"/>
+<meta name="author" content="Extreme Sport Одесса"/>
+<link rel="canonical" href="https://extreme-sport.od.ua/"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="Extreme Sport — Спортивные товары в Одессе"/>
+<meta property="og:description" content="Боксёрские перчатки, MMA, компрессионная одежда, футбольная форма. Одесса, Пантелеймоновская 25, ТЦ «Новый Привоз», 3 этаж."/>
+<meta property="og:url" content="https://extreme-sport.od.ua/"/>
+<meta property="og:locale" content="ru_UA"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SportingGoodsStore",
+  "name": "Extreme Sport",
+  "description": "Магазин спортивных товаров в Одессе. Боксёрские перчатки, единоборства, MMA, компрессионная одежда, футбольная форма.",
+  "url": "https://extreme-sport.od.ua/",
+  "telephone": "+380-XX-XXX-XXXX",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "ул. Пантелеймоновская 25, ТЦ «Новый Привоз», 3 этаж",
+    "addressLocality": "Одесса",
+    "addressCountry": "UA"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 46.4825,
+    "longitude": 30.7233
+  },
+  "openingHours": "Mo-Su 09:00-21:00",
+  "priceRange": "₴₴",
+  "sameAs": ["https://prom.ua/c2948527-magazin-extreme-sport.html"]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@400;600;700;900&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet"/>
+<style>
+:root {
+  --black: #080808;
+  --dark: #111111;
+  --card: #161616;
+  --border: #222222;
+  --red: #E8001D;
+  --red2: #FF1F3A;
+  --orange: #FF6B00;
+  --white: #F5F5F5;
+  --gray: #888888;
+  --light: #CCCCCC;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  background:var(--black);
+  color:var(--white);
+  font-family:'Barlow',sans-serif;
+  overflow-x:hidden;
+  cursor:none;
+}
+
+/* CUSTOM CURSOR */
+#cursor{
+  position:fixed;width:12px;height:12px;
+  background:var(--red);border-radius:50%;
+  pointer-events:none;z-index:99999;
+  transform:translate(-50%,-50%);
+  transition:transform 0.1s,width 0.2s,height 0.2s,background 0.2s;
+  mix-blend-mode:difference;
+}
+#cursor-ring{
+  position:fixed;width:36px;height:36px;
+  border:1.5px solid var(--red);border-radius:50%;
+  pointer-events:none;z-index:99998;
+  transform:translate(-50%,-50%);
+  transition:transform 0.15s ease,width 0.3s,height 0.3s,opacity 0.3s;
+  opacity:0.6;
+}
+body:hover #cursor{opacity:1;}
+
+/* NOISE OVERLAY */
+body::before{
+  content:'';position:fixed;inset:0;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+  pointer-events:none;z-index:9999;opacity:0.4;
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar{width:4px;}
+::-webkit-scrollbar-track{background:var(--dark);}
+::-webkit-scrollbar-thumb{background:var(--red);border-radius:2px;}
+
+/* ═══════ HEADER ═══════ */
+header{
+  position:fixed;top:0;left:0;right:0;z-index:1000;
+  padding:0 40px;height:70px;
+  display:flex;align-items:center;justify-content:space-between;
+  background:rgba(8,8,8,0.85);backdrop-filter:blur(20px);
+  border-bottom:1px solid rgba(232,0,29,0.2);
+  transition:all 0.3s;
+}
+header.scrolled{
+  background:rgba(8,8,8,0.98);
+  border-bottom-color:rgba(232,0,29,0.5);
+}
+
+.logo{
+  display:flex;align-items:center;gap:14px;
+  text-decoration:none;
+}
+.logo-icon{
+  width:44px;height:44px;
+  position:relative;
+  flex-shrink:0;
+}
+.logo-icon svg{filter:drop-shadow(0 0 8px rgba(232,0,29,0.6));}
+.logo-text{
+  display:flex;flex-direction:column;line-height:1;
+}
+.logo-main{
+  font-family:'Bebas Neue',sans-serif;
+  font-size:26px;letter-spacing:3px;color:var(--white);
+  text-shadow:0 0 20px rgba(232,0,29,0.4);
+}
+.logo-sub{
+  font-family:'Barlow Condensed',sans-serif;
+  font-size:10px;letter-spacing:6px;color:var(--red);
+  text-transform:uppercase;margin-top:1px;
+}
+
+nav{display:flex;gap:32px;align-items:center;}
+nav a{
+  font-family:'Barlow Condensed',sans-serif;
+  font-size:13px;letter-spacing:2px;text-transform:uppercase;
+  color:var(--light);text-decoration:none;
+  position:relative;transition:color 0.3s;
+}
+nav a::after{
+  content:'';position:absolute;bottom:-4px;left:0;right:0;height:1px;
+  background:var(--red);transform:scaleX(0);transition:transform 0.3s;
+  transform-origin:left;
+}
+nav a:hover{color:var(--white);}
+nav a:hover::after{transform:scaleX(1);}
+
+.header-cta{
+  display:flex;align-items:center;gap:16px;
+}
+.btn-call{
+  font-family:'Barlow Condensed',sans-serif;
+  font-size:13px;letter-spacing:1px;
+  color:var(--white);background:var(--red);
+  border:none;padding:10px 22px;cursor:none;
+  clip-path:polygon(8px 0%,100% 0%,calc(100% - 8px) 100%,0% 100%);
+  text-decoration:none;transition:background 0.3s,transform 0.2s;
+  text-transform:uppercase;
+}
+.btn-call:hover{background:var(--red2);transform:scale(1.04);}
+
+.burger{display:none;flex-direction:column;gap:5px;cursor:none;background:none;border:none;padding:4px;}
+.burger span{display:block;width:26px;height:2px;background:var(--white);transition:0.3s;}
+
+/* ═══════ HERO ═══════ */
+#hero{
+  height:100vh;min-height:700px;
+  position:relative;overflow:hidden;
+  display:flex;align-items:center;
+}
+.hero-bg{
+  position:absolute;inset:0;
+  background:
+    radial-gradient(ellipse 80% 60% at 70% 50%, rgba(232,0,29,0.12) 0%, transparent 70%),
+    radial-gradient(ellipse 40% 40% at 20% 80%, rgba(255,107,0,0.06) 0%, transparent 60%),
+    linear-gradient(180deg, #080808 0%, #0e0e0e 100%);
+}
+.hero-grid{
+  position:absolute;inset:0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size:60px 60px;
+  animation:gridMove 20s linear infinite;
+}
+@keyframes gridMove{
+  0%{background-position:0 0;}
+  100%{background-position:60px 60px;}
+}
+.hero-diagonal{
+  position:absolute;right:-100px;top:0;bottom:0;width:55%;
+  background:linear-gradient(135deg, transparent 0%, rgba(232,0,29,0.04) 50%, transparent 100%);
+  transform:skewX(-8deg);
+}
+
+.hero-content{
+  position:relative;z-index:2;
+  padding:0 60px;max-width:900px;
+}
+.hero-badge{
+  display:inline-flex;align-items:center;gap:8px;
+  font-family:'Barlow Condensed',sans-serif;
+  font-size:11px;letter-spacing:4px;text-transform:uppercase;
+  color:var(--red);border:1px solid rgba(232,0,29,0.4);
+  padding:6px 16px;margin-bottom:28px;
+  animation:fadeSlideUp 0.8s ease forwards;opacity:0;
+}
+.hero-badge::before{content:'●';font-size:6px;animation:pulse 2s infinite;}
+@keyframes pulse{0%,100%{opacity:1;}50%{opacity:0.3;}}
+
+.hero-h1{
+  font-family:'Bebas Neue',sans-serif;
+  font-size:clamp(72px, 10vw, 140px);
+  line-height:0.92;letter-spacing:2px;
+  animation:fadeSlideUp 0.8s 0.2s ease forwards;opacity:0;
+}
+.hero-h1 span{
+  display:block;color:var(--red);
+  -webkit-text-stroke:2px var(--red);
+  color:transparent;
+  text-shadow:none;
+  filter:drop-shadow(0 0 30px rgba(232,0,29,0.5));
+  animation:fadeSlideUp 0.8s 0.35s ease forwards;opacity:0;
+}
+.hero-sub{
+  font-family:'Barlow',sans-serif;
+  font-size:16px;font-weight:300;color:var(--gray);
+  max-width:480px;line-height:1.7;margin:20px 0 36px;
+  animation:fadeSlideUp 0.8s 0.5s ease forwards;opacity:0;
+}
+.hero-actions{
+  display:flex;gap:16px;flex-wrap:wrap;
+  animation:fadeSlideUp 0.8s 0.65s ease forwards;opacity:0;
+}
+.btn-primary{
+  font-family:'Barlow Condensed',sans-serif;
+  font-size:14px;letter-spacing:2px;text-transform:uppercase;
+  color:var(--white);background:var(--red);
+  border:none;padding:16px 36px;cursor:none;
+  text-decoration:none;transition:all 0.3s;
+  clip-path:polygon(12px 0%,100% 0%,calc(100% - 12px) 100%,0% 100%);
+  position:relative;overflow:hidden;
+}
+.btn-primary::before{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,0.15),transparent);
+  transform:translateX(-100%);transition:transform 0.5s;
+}
+.btn-primary:hover::before{transform:translateX(100%);}
+.btn-primary:hover{background:var(--red2);transform:translateY(-2px);box-shadow:0 8px 30px rgba(232,0,29,0.4);}
+
+.btn-outline{
+  font-family:'Barlow Condensed',sans-serif;
+  font-size:14px;letter-spacing:2px;text-transform:uppercase;
+  color:var(--white);background:transparent;
+  border:1px solid rgba(255,255,255,0.3);padding:16px 36px;cursor:none;
+  text-decoration:none;transition:all 0.3s;
+  clip-path:polygon(12px 0%,100% 0%,calc(100% - 12px) 100%,0% 100%);
+}
+.btn-outline:hover{border-color:var(--red);color:var(--red);transform:translateY(-2px);}
+
+.hero-stats{
+  position:absolute;right:60px;bottom:80px;z-index:2;
+  display:flex;gap:40px;
+  animation:fadeSlideUp 0.8s 0.8s ease forwards;opacity:0;
+}
+.stat{text-align:right;}
+.stat-num{
+  font-family:'Bebas Neue',sans-serif;
+  font-size:48px;color:var(--white);line-height:1;
+}
+.stat-num span{color:var(--red);}
+.stat-label{
+  font-family:'Barlow Condensed',sans-serif;
+  font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--gray);
+}
+
+.hero-scroll{
+  position:absolute;bottom:30px;left:60px;z-index:2;
+  display:flex;align-items:center;gap:10px;
+  font-family:'Barlow Condensed',sans-serif;
+  font-size:10px;letter-spacing:4px;text-transform:uppercase;color:var(--gray);
+  animation:fadeSlideUp 1s 1s ease forwards;opacity:0;
+}
+.scroll-line{width:40px;height:1px;background:var(--gray);}
+.scroll-dot{
+  width:6px;height:6px;background:var(--red);border-radius:50%;
+  animation:scrollBounce 2s infinite;
+}
+@keyframes scrollBounce{
+  0%,100%{transform:translateY(0);}
+  50%{transform:translateY(6px);}
+}
+
+@keyframes fadeSlideUp{
+  from{opacity:0;transform:translateY(30px);}
+  to{opacity:1;transform:translateY(0);}
+}
+
+/* ═══════ TICKER ═══════ */
+.ticker{
+  background:var(--red);padding:12px 0;overflow:hidden;
+  border-top:1px solid rgba(255,255,255,0.1);
+  border-bottom:1px solid rgba(255,255,255,0.1);
+}
+.ticker-inner{
+  display:flex;gap:0;
+  animation:ticker 30s linear infinite;
+  white-space:nowrap;
+}
+.ticker-item{
+  font-family:'Bebas Neue',sans-serif;
+  font-size:15px;letter-spacing:4px;color:var(--white);
+  padding:0 32px;opacity:0.9;
+  display:inline-flex;align-items:center;gap:20px;
+}
+.ticker-dot{width:6px;height:6px;background:rgba(255,255,255,0.5);border-radius:50%;flex-shrink:0;}
+@keyframes ticker{
+  0%{transform:translateX(0);}
+  100%{transform:translateX(-50%);}
+}
+
+/* ═══════ SECTION COMMON ═══════ */
+section{padding:100px 60px;}
+.section-label{
+  font-family:'Barlow Condensed',sans-serif;
+  font-size:11px;letter-spacing:5px;text-transform:uppercase;
+  color:var(--red);margin-bottom:12px;
+  display:flex;align-items:center;gap:10px;
+}
+.section-label::before{content:'';width:24px;height:1px;background:var(--red);}
+.section-title{
+  font-family:'Bebas Neue',sans-serif;
+  font-size:clamp(44px,6vw,80px);
+  line-height:0.95;margin-bottom:16px;letter-spacing:1px;
+}
+.section-desc{
+  font-size:15px;color:var(--gray);line-height:1.7;
+  max-width:520px;margin-bottom:50px;font-weight:300;
+}
+
+/* ═══════ CATEGORIES ═══════ */
+#categories{background:var(--dark);position:relative;overflow:hidden;}
+#categories::before{
+  content:'SPORT';
+  position:absolute;right:-40px;top:50%;transform:translateY(-50%);
+  font-family:'Bebas Neue',sans-serif;font-size:280px;
+  color:rgba(255,255,255,0.015);pointer-events:none;line-height:1;
+  white-space:nowrap;
+}
+
+.categories-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:2px;
+}
+.cat-card{
+  position:relative;overflow:hidden;
+  aspect-ratio:1/1.1;
+  background:var(--card);
+  cursor:none;
+  transition:transform 0.4s;
+  text-decoration:none;
+  display:block;
+}
+.cat-card:hover{transform:scale(1.02);z-index:2;}
+.cat-card-bg{
+  position:absolute;inset:0;
+  transition:transform 0.6s ease;
+}
+.cat-card:hover .cat-card-bg{transform:scale(1.08);}
+.cat-gradient{
+  position:absolute;inset:0;
+  background:linear-gradient(180deg,transparent 30%,rgba(0,0,0,0.85) 100%);
+  z-index:1;
+}
+.cat-card-line{
+  position:absolute;top:0;left:0;right:0;height:3px;
+  background:var(--red);transform:scaleX(0);
+  transform-origin:left;transition:transform 0.4s;z-index:3;
+}
+.cat-card:hover .cat-card-line{transform:scaleX(1);}
+.cat-info{
+  position:absolute;bottom:0;left:0;right:0;
+  padding:24px 20px;z-index:2;
+}
+.cat-icon{
+  font-size:32px;margin-bottom:10px;
+  display:block;
+  transform:translateY(5px);transition:transform 0.4s;
+}
+.cat-card:hover .cat-icon{transform:translateY(0);}
+.cat-name{
+  font-family:'Barlow Condensed',sans-serif;
+  font-size:20px;font-weight:700;letter-spacing:1px;
+  text-transform:uppercase;color:var(--white);
+  display:block;margin-bottom:4px;
+}
+.cat-count{
+  font-family:'Barlow',sans-serif;
+  font-size:12px;color:var(--gray);
+}
+.cat-arrow{
+  position:absolute;bottom:24px;right:20px;
+  font-size:20px;color:var(--red);
+  transform:translateX(-4px);opacity:0;
+  transition:all 0.3s;z-index:2;
+}
+.cat-card:hover .cat-arrow{transform:translateX(0);opacity:1;}
+
+/* ICON BG ART */
+.cat-bg-art{
+  position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+  font-size:100px;opacity:0.07;
+  transform:rotate(-15deg) scale(1.2);
+  transition:transform 0.6s,opacity 0.4s;
+  z-index:0;
+}
+.cat-card:hover .cat-bg-art{opacity:0.12;transform:rotate(-10deg) scale(1.3);}
+
+/* ═══════ PRODUCTS ═══════ */
+#products{background:var(--black);}
+.products-header{
+  display:flex;align-items:flex-end;justify-content:space-between;
+  margin-bottom:48px;flex-wrap:wrap;gap:16px;
+}
+.view-all{
+  font-family:'Barlow Condensed',sans-serif;
+  font-size:13px;letter-spacing:2px;text-transform:uppercase;
+  color:var(--red);text-decoration:none;
+  display:flex;align-items:center;gap:8px;
+  transition:gap 0.3s;border-bottom:1px solid transparent;
+  padding-bottom:2px;
+}
+.view-all:hover{gap:14px;border-bottom-color:var(--red);}
+
+.products-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(240px,1fr));
+  gap:2px;
+}
+.product-card{
+  background:var(--card);
+  position:relative;overflow:hidden;
+  cursor:none;
+  transition:transform 0.3s;
+  text-decoration:none;color:inherit;
+  display:block;
+}
+.product-card:hover{transform:translateY(-4px);}
+.product-card::before{
+  content:'';position:absolute;inset:0;
+  border:1px solid transparent;transition:border-color 0.3s;z-index:1;
+  pointer-events:none;
+}
+.product-card:hover::before{border-color:rgba(232,0,29,0.5);}
+.product-img{
+  width:100%;aspect-ratio:1/1;
+  object-fit:cover;display:block;
+  transition:transform 0.5s;
+  background:var(--border);
+}
+.product-card:hover .product-img{transform:scale(1.06);}
+.product-img-wrap{overflow:hidden;position:relative;}
+.product-badge{
+  position:absolute;top:12px;left:12px;z-index:2;
+  font-family:'Barlow Condensed',sans-serif;
+  font-size:11px;letter-spacing:2px;text-transform:uppercase;
+  background:var(--red);color:var(--white);padding:4px 10px;
+}
+.product-info{padding:16px;}
+.product-name{
+  font-family:'Barlow Condensed',sans-serif;
+  font-size:16px;font-weight:600;letter-spacing:0.5px;
+  color:var(--white);margin-bottom:10px;line-height:1.3;
+  text-transform:uppercase;
+}
+.product-footer{
+  display:flex;align-items:center;justify-content:space-between;
+}
+.product-price{
+  font-family:'Bebas Neue',sans-serif;
+  font-size:26px;color:var(--red);letter-spacing:1px;
+}
+.product-price span{
+  font-family:'Barlow',sans-serif;
+  font-size:12px;color:var(--gray);margin-left:2px;
+}
+.btn-buy{
+  width:36px;height:36px;background:var(--red);border:none;
+  cursor:none;display:flex;align-items:center;justify-content:center;
+  transition:all 0.3s;clip-path:polygon(6px 0%,100% 0%,calc(100% - 6px) 100%,0% 100%);
+  color:var(--white);font-size:16px;
+  text-decoration:none;
+}
+.btn-buy:hover{background:var(--red2);transform:scale(1.1);}
+
+/* ═══════ WHY US ═══════ */
+#why{background:var(--dark);position:relative;overflow:hidden;}
+.why-grid{
+  display:grid;grid-template-columns:1fr 1fr;gap:2px;
+  margin-top:60px;
+}
+.why-card{
+  background:var(--card);padding:40px;
+  position:relative;overflow:hidden;
+  transition:background 0.3s;
+}
+.why-card:hover{background:#1a1a1a;}
+.why-card::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:2px;
+  background:linear-gradient(90deg,var(--red),var(--orange));
+  transform:scaleX(0);transform-origin:left;
+  transition:transform 0.5s;
+}
+.why-card:hover::before{transform:scaleX(1);}
+.why-num{
+  font-family:'Bebas Neue',sans-serif;
+  font-size:80px;color:rgba(232,0,29,0.1);
+  line-height:1;margin-bottom:-20px;
+  transition:color 0.3s;
+}
+.why-card:hover .why-num{color:rgba(232,0,29,0.2);}
+.why-icon{font-size:36px;margin-bottom:16px;display:block;}
+.why-title{
+  font-family:'Barlow Condensed',sans-serif;
+  font-size:22px;font-weight:700;letter-spacing:1px;
+  text-transform:uppercase;color:var(--white);margin-bottom:10px;
+}
+.why-text{font-size:14px;color:var(--gray);line-height:1.7;font-weight:300;}
+
+/* ═══════ BRANDS ═══════ */
+#brands{background:var(--black);padding:60px;}
+.brands-title{
+  font-family:'Barlow Condensed',sans-serif;
+  font-size:11px;letter-spacing:5px;text-transform:uppercase;
+  color:var(--gray);text-align:center;margin-bottom:36px;
+}
+.brands-track{overflow:hidden;}
+.brands-inner{
+  display:flex;gap:60px;align-items:center;
+  animation:brandsScroll 20s linear infinite;
+  white-space:nowrap;
+}
+.brand-name{
+  font-family:'Bebas Neue',sans-serif;
+  font-size:28px;letter-spacing:4px;
+  color:rgba(255,255,255,0.15);
+  transition:color 0.3s;cursor:default;
+  flex-shrink:0;
+}
+.brand-name:hover{color:rgba(255,255,255,0.6);}
+@keyframes brandsScroll{
+  0%{transform:translateX(0);}
+  100%{transform:translateX(-50%);}
+}
+
+/* ═══════ CTA STRIP ═══════ */
+#cta{
+  background:var(--red);padding:80px 60px;
+  position:relative;overflow:hidden;
+  text-align:center;
+}
+#cta::before{
+  content:'EXTREME';
+  position:absolute;left:50%;top:50%;
+  transform:translate(-50%,-50%);
+  font-family:'Bebas Neue',sans-serif;
+  font-size:300px;color:rgba(0,0,0,0.1);
+  white-space:nowrap;pointer-events:none;line-height:1;
+}
+.cta-label{
+  font-family:'Barlow Condensed',sans-serif;
+  font-size:11px;letter-spacing:6px;text-transform:uppercase;
+  color:rgba(255,255,255,0.7);margin-bottom:16px;
+}
+.cta-title{
+  font-family:'Bebas Neue',sans-serif;
+  font-size:clamp(48px,7vw,96px);color:var(--white);
+  line-height:0.95;margin-bottom:24px;letter-spacing:2px;
+}
+.cta-sub{
+  font-size:15px;color:rgba(255,255,255,0.75);
+  margin-bottom:40px;font-weight:300;
+}
+.cta-actions{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;}
+.btn-white{
+  font-family:'Barlow Condensed',sans-serif;
+  font-size:14px;letter-spacing:2px;text-transform:uppercase;
+  color:var(--red);background:var(--white);
+  border:none;padding:16px 36px;cursor:none;
+  text-decoration:none;transition:all 0.3s;
+  clip-path:polygon(12px 0%,100% 0%,calc(100% - 12px) 100%,0% 100%);
+  font-weight:600;
+}
+.btn-white:hover{background:#f0f0f0;transform:translateY(-2px);box-shadow:0 8px 30px rgba(0,0,0,0.3);}
+.btn-trans{
+  font-family:'Barlow Condensed',sans-serif;
+  font-size:14px;letter-spacing:2px;text-transform:uppercase;
+  color:var(--white);background:transparent;
+  border:2px solid rgba(255,255,255,0.6);padding:16px 36px;cursor:none;
+  text-decoration:none;transition:all 0.3s;
+  clip-path:polygon(12px 0%,100% 0%,calc(100% - 12px) 100%,0% 100%);
+}
+.btn-trans:hover{border-color:var(--white);transform:translateY(-2px);}
+
+/* ═══════ CONTACT / MAP ═══════ */
+#contact{background:var(--dark);padding:100px 60px;}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start;}
+.contact-info{display:flex;flex-direction:column;gap:32px;}
+.contact-item{display:flex;gap:20px;align-items:flex-start;}
+.contact-icon{
+  width:48px;height:48px;background:rgba(232,0,29,0.1);
+  border:1px solid rgba(232,0,29,0.3);
+  display:flex;align-items:center;justify-content:center;
+  font-size:20px;flex-shrink:0;
+  transition:background 0.3s;
+}
+.contact-item:hover .contact-icon{background:rgba(232,0,29,0.2);}
+.contact-label{
+  font-family:'Barlow Condensed',sans-serif;
+  font-size:11px;letter-spacing:3px;text-transform:uppercase;
+  color:var(--red);margin-bottom:4px;
+}
+.contact-value{
+  font-size:15px;color:var(--white);line-height:1.5;font-weight:300;
+}
+.contact-value a{color:inherit;text-decoration:none;}
+.contact-value a:hover{color:var(--red);}
+.map-wrap{
+  background:var(--card);height:320px;
+  display:flex;align-items:center;justify-content:center;
+  border:1px solid var(--border);position:relative;overflow:hidden;
+}
+.map-placeholder{
+  display:flex;flex-direction:column;align-items:center;gap:12px;
+  color:var(--gray);
+}
+.map-pin{font-size:36px;animation:mapPulse 2s infinite;}
+@keyframes mapPulse{
+  0%,100%{transform:translateY(0);} 50%{transform:translateY(-6px);}
+}
+.map-text{
+  font-family:'Barlow Condensed',sans-serif;
+  font-size:13px;letter-spacing:2px;text-transform:uppercase;
+  color:var(--gray);text-align:center;line-height:1.5;
+}
+.map-link{
+  font-family:'Barlow Condensed',sans-serif;
+  font-size:12px;letter-spacing:2px;text-transform:uppercase;
+  color:var(--red);text-decoration:none;
+  border-bottom:1px solid rgba(232,0,29,0.4);
+  padding-bottom:2px;transition:border-color 0.3s;
+}
+.map-link:hover{border-color:var(--red);}
+
+/* ═══════ FOOTER ═══════ */
+footer{background:var(--black);border-top:1px solid var(--border);}
+.footer-top{
+  padding:60px;display:grid;
+  grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;
+}
+.footer-logo{margin-bottom:16px;}
+.footer-desc{
+  font-size:13px;color:var(--gray);line-height:1.7;
+  font-weight:300;max-width:280px;margin-bottom:20px;
+}
+.social-links{display:flex;gap:12px;}
+.social-link{
+  width:36px;height:36px;background:var(--card);border:1px solid var(--border);
+  display:flex;align-items:center;justify-content:center;
+  color:var(--gray);text-decoration:none;font-size:14px;
+  transition:all 0.3s;
+}
+.social-link:hover{background:var(--red);border-color:var(--red);color:var(--white);}
+.footer-col-title{
+  font-family:'Barlow Condensed',sans-serif;
+  font-size:13px;letter-spacing:3px;text-transform:uppercase;
+  color:var(--white);margin-bottom:20px;
+}
+.footer-links{display:flex;flex-direction:column;gap:10px;}
+.footer-link{
+  font-size:13px;color:var(--gray);text-decoration:none;
+  transition:color 0.3s;font-weight:300;
+}
+.footer-link:hover{color:var(--white);}
+.footer-bottom{
+  border-top:1px solid var(--border);padding:20px 60px;
+  display:flex;align-items:center;justify-content:space-between;
+  flex-wrap:wrap;gap:12px;
+}
+.footer-copy{
+  font-size:12px;color:var(--gray);font-weight:300;
+}
+.footer-copy span{color:var(--red);}
+.prom-link{
+  font-family:'Barlow Condensed',sans-serif;
+  font-size:11px;letter-spacing:2px;text-transform:uppercase;
+  color:var(--gray);text-decoration:none;
+  border-bottom:1px solid transparent;transition:all 0.3s;
+}
+.prom-link:hover{color:var(--red);border-bottom-color:var(--red);}
+
+/* ═══════ MOBILE NAV ═══════ */
+.mobile-nav{
+  display:none;position:fixed;inset:0;z-index:999;
+  background:rgba(8,8,8,0.98);backdrop-filter:blur(20px);
+  flex-direction:column;align-items:center;justify-content:center;gap:32px;
+  transform:translateX(100%);transition:transform 0.4s cubic-bezier(0.77,0,0.175,1);
+}
+.mobile-nav.open{transform:translateX(0);}
+.mobile-nav a{
+  font-family:'Bebas Neue',sans-serif;
+  font-size:42px;letter-spacing:4px;
+  color:var(--white);text-decoration:none;
+  transition:color 0.3s;
+}
+.mobile-nav a:hover{color:var(--red);}
+.close-nav{
+  position:absolute;top:20px;right:20px;
+  background:none;border:none;color:var(--white);
+  font-size:28px;cursor:none;
+}
+
+/* ═══════ SCROLL REVEAL ═══════ */
+.reveal{
+  opacity:0;transform:translateY(40px);
+  transition:opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal.visible{opacity:1;transform:translateY(0);}
+.reveal-delay-1{transition-delay:0.1s;}
+.reveal-delay-2{transition-delay:0.2s;}
+.reveal-delay-3{transition-delay:0.3s;}
+.reveal-delay-4{transition-delay:0.4s;}
+
+/* ═══════ RESPONSIVE ═══════ */
+@media(max-width:1024px){
+  .categories-grid{grid-template-columns:repeat(3,1fr);}
+  .footer-top{grid-template-columns:1fr 1fr;}
+}
+@media(max-width:768px){
+  header{padding:0 20px;}
+  nav{display:none;}
+  .burger{display:flex;}
+  .mobile-nav{display:flex;}
+  section{padding:70px 24px;}
+  #hero{padding:0;}
+  .hero-content{padding:0 24px;padding-top:80px;}
+  .hero-stats{display:none;}
+  .hero-scroll{left:24px;}
+  .categories-grid{grid-template-columns:repeat(2,1fr);}
+  .why-grid{grid-template-columns:1fr;}
+  .contact-grid{grid-template-columns:1fr;}
+  .footer-top{grid-template-columns:1fr;padding:40px 24px;}
+  .footer-bottom{padding:20px 24px;}
+  #brands{padding:40px 24px;}
+  #cta{padding:60px 24px;}
+  body{cursor:auto;}
+  #cursor,#cursor-ring{display:none;}
+  .btn-primary,.btn-outline,.btn-call,.btn-buy,.btn-white,.btn-trans{cursor:pointer;}
+  nav a,.logo,.burger,.close-nav,.view-all,.prom-link,.footer-link,.contact-value a{cursor:pointer;}
+}
+</style>
+</head>
+<body>
+
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+
+<!-- MOBILE NAV -->
+<div class="mobile-nav" id="mobileNav">
+  <button class="close-nav" id="closeNav">✕</button>
+  <a href="#categories">Категории</a>
+  <a href="#products">Товары</a>
+  <a href="#why">О нас</a>
+  <a href="#contact">Контакты</a>
+</div>
+
+<!-- HEADER -->
+<header id="header">
+  <a href="#" class="logo">
+    <div class="logo-icon">
+      <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <polygon points="22,2 42,14 42,30 22,42 2,30 2,14" fill="none" stroke="#E8001D" stroke-width="1.5"/>
+        <polygon points="22,6 38,15.5 38,28.5 22,38 6,28.5 6,15.5" fill="rgba(232,0,29,0.08)"/>
+        <path d="M14 16 L22 28 L30 16" stroke="#E8001D" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <path d="M18 22 H26" stroke="#E8001D" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="22" cy="22" r="2" fill="#E8001D"/>
+      </svg>
+    </div>
+    <div class="logo-text">
+      <span class="logo-main">Extreme Sport</span>
+      <span class="logo-sub">Одесса · Спорт товары</span>
+    </div>
+  </a>
+
+  <nav>
+    <a href="#categories">Категории</a>
+    <a href="#products">Товары</a>
+    <a href="#why">О магазине</a>
+    <a href="#brands">Бренды</a>
+    <a href="#contact">Контакты</a>
+  </nav>
+
+  <div class="header-cta">
+    <a href="https://prom.ua/c2948527-magazin-extreme-sport.html" target="_blank" class="btn-call">Prom.ua</a>
+    <button class="burger" id="burgerBtn">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-diagonal"></div>
+
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span>● Работаем в Одессе</span>
+    </div>
+    <h1 class="hero-h1">
+      ТВОЙ<br>
+      <span>EXTREME</span>
+      УРОВЕНЬ
+    </h1>
+    <p class="hero-sub">Профессиональное снаряжение для бокса, MMA, единоборств, футбола и активного спорта. Бренды RDX, VENUM, EVERLAST, TWINS и другие.</p>
+    <div class="hero-actions">
+      <a href="#categories" class="btn-primary">Смотреть каталог →</a>
+      <a href="#contact" class="btn-outline">Как нас найти</a>
+    </div>
+  </div>
+
+  <div class="hero-stats">
+    <div class="stat">
+      <div class="stat-num">1<span>086</span></div>
+      <div class="stat-label">Товаров</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num"><span>20</span>+</div>
+      <div class="stat-label">Брендов</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num"><span>96</span>%</div>
+      <div class="stat-label">Позитивних відгуків</div>
+    </div>
+  </div>
+
+  <div class="hero-scroll">
+    <div class="scroll-line"></div>
+    <div class="scroll-dot"></div>
+    <span>Скролл</span>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker">
+  <div class="ticker-inner">
+    <span class="ticker-item"><span class="ticker-dot"></span>БОКСЁРСКИЕ ПЕРЧАТКИ</span>
+    <span class="ticker-item"><span class="ticker-dot"></span>MMA ЭКИПИРОВКА</span>
+    <span class="ticker-item"><span class="ticker-dot"></span>ФУТБОЛЬНАЯ ФОРМА</span>
+    <span class="ticker-item"><span class="ticker-dot"></span>КОМПРЕССИОННАЯ ОДЕЖДА</span>
+    <span class="ticker-item"><span class="ticker-dot"></span>ЗАЩИТА ДЛЯ ЕДИНОБОРСТВ</span>
+    <span class="ticker-item"><span class="ticker-dot"></span>ТАКТИЧЕСКИЕ ТОВАРЫ</span>
+    <span class="ticker-item"><span class="ticker-dot"></span>ПЛАВАНИЕ</span>
+    <span class="ticker-item"><span class="ticker-dot"></span>ФИТНЕС И ЙОГА</span>
+    <span class="ticker-item"><span class="ticker-dot"></span>RDX · VENUM · EVERLAST</span>
+    <!-- duplicate for seamless loop -->
+    <span class="ticker-item"><span class="ticker-dot"></span>БОКСЁРСКИЕ ПЕРЧАТКИ</span>
+    <span class="ticker-item"><span class="ticker-dot"></span>MMA ЭКИПИРОВКА</span>
+    <span class="ticker-item"><span class="ticker-dot"></span>ФУТБОЛЬНАЯ ФОРМА</span>
+    <span class="ticker-item"><span class="ticker-dot"></span>КОМПРЕССИОННАЯ ОДЕЖДА</span>
+    <span class="ticker-item"><span class="ticker-dot"></span>ЗАЩИТА ДЛЯ ЕДИНОБОРСТВ</span>
+    <span class="ticker-item"><span class="ticker-dot"></span>ТАКТИЧЕСКИЕ ТОВАРЫ</span>
+    <span class="ticker-item"><span class="ticker-dot"></span>ПЛАВАНИЕ</span>
+    <span class="ticker-item"><span class="ticker-dot"></span>ФИТНЕС И ЙОГА</span>
+    <span class="ticker-item"><span class="ticker-dot"></span>RDX · VENUM · EVERLAST</span>
+  </div>
+</div>
+
+<!-- CATEGORIES -->
+<section id="categories">
+  <div class="section-label">Ассортимент</div>
+  <h2 class="section-title reveal">ВСЕ КАТЕГОРИИ</h2>
+  <p class="section-desc reveal reveal-delay-1">От перчаток до формы — полный арсенал для вашего спорта. 1086+ товаров в наличии в Одессе.</p>
+
+  <div class="categories-grid">
+
+    <a href="https://prom.ua/c2948527-magazin-extreme-sport.html" target="_blank" class="cat-card reveal reveal-delay-1">
+      <div class="cat-bg-art">🥊</div>
+      <div class="cat-gradient"></div>
+      <div class="cat-card-line"></div>
+      <div class="cat-info">
+        <span class="cat-icon">🥊</span>
+        <span class="cat-name">Боксёрские перчатки</span>
+        <span class="cat-count">RDX, VENUM, EVERLAST, TWINS, BAD BOY</span>
+      </div>
+      <span class="cat-arrow">→</span>
+    </a>
+
+    <a href="https://prom.ua/c2948527-magazin-extreme-sport.html" target="_blank" class="cat-card reveal reveal-delay-2">
+      <div class="cat-bg-art">🥋</div>
+      <div class="cat-gradient"></div>
+      <div class="cat-card-line"></div>
+      <div class="cat-info">
+        <span class="cat-icon">🥋</span>
+        <span class="cat-name">Единоборства</span>
+        <span class="cat-count">Форма, шорты, экипировка MMA</span>
+      </div>
+      <span class="cat-arrow">→</span>
+    </a>
+
+    <a href="https://prom.ua/c2948527-magazin-extreme-sport.html" target="_blank" class="cat-card reveal reveal-delay-3">
+      <div class="cat-bg-art">⚽</div>
+      <div class="cat-gradient"></div>
+      <div class="cat-card-line"></div>
+      <div class="cat-info">
+        <span class="cat-icon">⚽</span>
+        <span class="cat-name">Футбол</span>
+        <span class="cat-count">Форма клубов, мячи, аксессуары</span>
+      </div>
+      <span class="cat-arrow">→</span>
+    </a>
+
+    <a href="https://prom.ua/c2948527-magazin-extreme-sport.html" target="_blank" class="cat-card reveal reveal-delay-4">
+      <div class="cat-bg-art">🧤</div>
+      <div class="cat-gradient"></div>
+      <div class="cat-card-line"></div>
+      <div class="cat-info">
+        <span class="cat-icon">🛡️</span>
+        <span class="cat-name">Защита</span>
+        <span class="cat-count">Голень, стопа, голеностоп, пах</span>
+      </div>
+      <span class="cat-arrow">→</span>
+    </a>
+
+    <a href="https://prom.ua/c2948527-magazin-extreme-sport.html" target="_blank" class="cat-card reveal reveal-delay-1">
+      <div class="cat-bg-art">👕</div>
+      <div class="cat-gradient"></div>
+      <div class="cat-card-line"></div>
+      <div class="cat-info">
+        <span class="cat-icon">👕</span>
+        <span class="cat-name">Компрессионная одежда</span>
+        <span class="cat-count">Рашгарды, трико, комплекты GREEN HILL</span>
+      </div>
+      <span class="cat-arrow">→</span>
+    </a>
+
+    <a href="https://prom.ua/c2948527-magazin-extreme-sport.html" target="_blank" class="cat-card reveal reveal-delay-2">
+      <div class="cat-bg-art">🏊</div>
+      <div class="cat-gradient"></div>
+      <div class="cat-card-line"></div>
+      <div class="cat-info">
+        <span class="cat-icon">🏊</span>
+        <span class="cat-name">Плавание</span>
+        <span class="cat-count">Маски, трубки, аксессуары</span>
+      </div>
+      <span class="cat-arrow">→</span>
+    </a>
+
+    <a href="https://prom.ua/c2948527-magazin-extreme-sport.html" target="_blank" class="cat-card reveal reveal-delay-3">
+      <div class="cat-bg-art">🪖</div>
+      <div class="cat-gradient"></div>
+      <div class="cat-card-line"></div>
+      <div class="cat-info">
+        <span class="cat-icon">🪖</span>
+        <span class="cat-name">Тактические товары</span>
+        <span class="cat-count">Балаклавы, снаряжение, аксессуары</span>
+      </div>
+      <span class="cat-arrow">→</span>
+    </a>
+
+    <a href="https://prom.ua/c2948527-magazin-extreme-sport.html" target="_blank" class="cat-card reveal reveal-delay-4">
+      <div class="cat-bg-art">🧘</div>
+      <div class="cat-gradient"></div>
+      <div class="cat-card-line"></div>
+      <div class="cat-info">
+        <span class="cat-icon">🧘</span>
+        <span class="cat-name">Фитнес и йога</span>
+        <span class="cat-count">Ролики, коврики, инвентарь</span>
+      </div>
+      <span class="cat-arrow">→</span>
+    </a>
+
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section id="products">
+  <div class="products-header reveal">
+    <div>
+      <div class="section-label">В наличии</div>
+      <h2 class="section-title">ПОПУЛЯРНЫЕ<br>ТОВАРЫ</h2>
+    </div>
+    <a href="https://prom.ua/c2948527-magazin-extreme-sport.html" target="_blank" class="view-all">Весь каталог на Prom.ua →</a>
+  </div>
+
+  <div class="products-grid" id="productsGrid">
+    <!-- JS fills this -->
+  </div>
+</section>
+
+<!-- WHY US -->
+<section id="why">
+  <div class="section-label">Почему мы</div>
+  <h2 class="section-title reveal">EXTREME SPORT —<br>ВАШ ВЫБОР</h2>
+
+  <div class="why-grid">
+    <div class="why-card reveal reveal-delay-1">
+      <div class="why-num">01</div>
+      <span class="why-icon">🏆</span>
+      <div class="why-title">Только проверенные бренды</div>
+      <p class="why-text">Работаем исключительно с проверенными производителями: RDX, VENUM, EVERLAST, TWINS, GREEN HILL, BAD BOY и другими. Никаких подделок.</p>
+    </div>
+    <div class="why-card reveal reveal-delay-2">
+      <div class="why-num">02</div>
+      <span class="why-icon">📦</span>
+      <div class="why-title">Доставка по всей Украине</div>
+      <p class="why-text">Отправляем Новой Почтой и Укрпочтой по всей Украине. Быстро, надёжно, с трекингом. Или заберите самовывозом в Одессе.</p>
+    </div>
+    <div class="why-card reveal reveal-delay-3">
+      <div class="why-num">03</div>
+      <span class="why-icon">⭐</span>
+      <div class="why-title">96% положительных отзывов</div>
+      <p class="why-text">Более 870 продаж на Prom.ua с рейтингом 96%. Наши клиенты возвращаются снова — это лучшая оценка нашей работы.</p>
+    </div>
+    <div class="why-card reveal reveal-delay-4">
+      <div class="why-num">04</div>
+      <span class="why-icon">💬</span>
+      <div class="why-title">Экспертная консультация</div>
+      <p class="why-text">Наши специалисты помогут подобрать правильную экипировку под ваш вид спорта, уровень подготовки и бюджет. Онлайн и в магазине.</p>
+    </div>
+  </div>
+</section>
+
+<!-- BRANDS -->
+<div id="brands">
+  <p class="brands-title">Официальные бренды в ассортименте</p>
+  <div class="brands-track">
+    <div class="brands-inner">
+      <span class="brand-name">RDX</span>
+      <span class="brand-name">VENUM</span>
+      <span class="brand-name">EVERLAST</span>
+      <span class="brand-name">TWINS</span>
+      <span class="brand-name">GREEN HILL</span>
+      <span class="brand-name">BAD BOY</span>
+      <span class="brand-name">UFC</span>
+      <span class="brand-name">ROOMAIF</span>
+      <span class="brand-name">DONIC</span>
+      <span class="brand-name">ZELART</span>
+      <span class="brand-name">JOMA</span>
+      <span class="brand-name">ASICS</span>
+      <span class="brand-name">NIKE</span>
+      <span class="brand-name">JORDAN</span>
+      <!-- duplicate -->
+      <span class="brand-name">RDX</span>
+      <span class="brand-name">VENUM</span>
+      <span class="brand-name">EVERLAST</span>
+      <span class="brand-name">TWINS</span>
+      <span class="brand-name">GREEN HILL</span>
+      <span class="brand-name">BAD BOY</span>
+      <span class="brand-name">UFC</span>
+      <span class="brand-name">ROOMAIF</span>
+      <span class="brand-name">DONIC</span>
+      <span class="brand-name">ZELART</span>
+      <span class="brand-name">JOMA</span>
+      <span class="brand-name">ASICS</span>
+      <span class="brand-name">NIKE</span>
+      <span class="brand-name">JORDAN</span>
+    </div>
+  </div>
+</div>
+
+<!-- CTA -->
+<section id="cta">
+  <div class="cta-label">Магазин в Одессе</div>
+  <h2 class="cta-title">ПРИХОДИ —<br>ВЫБИРАЙ ЛИЧНО</h2>
+  <p class="cta-sub">Пантелеймоновская 25, ТЦ «Новый Привоз», 3 этаж · Одесса</p>
+  <div class="cta-actions">
+    <a href="#contact" class="btn-white">Как добраться →</a>
+    <a href="https://prom.ua/c2948527-magazin-extreme-sport.html" target="_blank" class="btn-trans">Каталог на Prom.ua</a>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-label">Найти нас</div>
+  <h2 class="section-title reveal">КОНТАКТЫ<br>&amp; АДРЕС</h2>
+  <div class="contact-grid">
+    <div class="contact-info">
+
+      <div class="contact-item reveal reveal-delay-1">
+        <div class="contact-icon">📍</div>
+        <div>
+          <div class="contact-label">Адрес</div>
+          <div class="contact-value">г. Одесса, ул. Пантелеймоновская 25<br>ТЦ «Новый Привоз», 3 этаж</div>
+        </div>
+      </div>
+
+      <div class="contact-item reveal reveal-delay-2">
+        <div class="contact-icon">🕐</div>
+        <div>
+          <div class="contact-label">Режим работы</div>
+          <div class="contact-value">Пн–Вс: 09:00 – 21:00<br>Без выходных</div>
+        </div>
+      </div>
+
+      <div class="contact-item reveal reveal-delay-3">
+        <div class="contact-icon">🛒</div>
+        <div>
+          <div class="contact-label">Онлайн заказы</div>
+          <div class="contact-value">
+            <a href="https://prom.ua/c2948527-magazin-extreme-sport.html" target="_blank">prom.ua/c2948527-magazin-extreme-sport</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-item reveal reveal-delay-4">
+        <div class="contact-icon">🚚</div>
+        <div>
+          <div class="contact-label">Доставка</div>
+          <div class="contact-value">Нова Пошта · Укрпошта<br>По всей Украине · Самовывоз</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="map-wrap reveal reveal-delay-2">
+      <div class="map-placeholder">
+        <span class="map-pin">📍</span>
+        <div class="map-text">
+          Одесса<br>
+          ул. Пантелеймоновская 25<br>
+          ТЦ «Новый Привоз», 3 этаж
+        </div>
+        <a href="https://maps.google.com/?q=Одесса+Пантелеймоновская+25" target="_blank" class="map-link">Открыть в Google Maps →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div>
+      <div class="footer-logo">
+        <a href="#" class="logo">
+          <div class="logo-icon">
+            <svg width="36" height="36" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <polygon points="22,2 42,14 42,30 22,42 2,30 2,14" fill="none" stroke="#E8001D" stroke-width="1.5"/>
+              <path d="M14 16 L22 28 L30 16" stroke="#E8001D" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+              <circle cx="22" cy="22" r="2" fill="#E8001D"/>
+            </svg>
+          </div>
+          <div class="logo-text">
+            <span class="logo-main" style="font-size:20px">Extreme Sport</span>
+            <span class="logo-sub">Одесса</span>
+          </div>
+        </a>
+      </div>
+      <p class="footer-desc">Профессиональное спортивное снаряжение для бокса, MMA, футбола и активного спорта. Работаем в Одессе, доставляем по всей Украине.</p>
+      <div class="social-links">
+        <a href="https://prom.ua/c2948527-magazin-extreme-sport.html" target="_blank" class="social-link" title="Prom.ua">P</a>
+        <a href="#" class="social-link" title="Instagram">IG</a>
+        <a href="#" class="social-link" title="Facebook">FB</a>
+      </div>
+    </div>
+
+    <div>
+      <div class="footer-col-title">Каталог</div>
+      <div class="footer-links">
+        <a href="#" class="footer-link">Боксёрские перчатки</a>
+        <a href="#" class="footer-link">Перчатки MMA</a>
+        <a href="#" class="footer-link">Единоборства</a>
+        <a href="#" class="footer-link">Футбол</a>
+        <a href="#" class="footer-link">Компрессия</a>
+        <a href="#" class="footer-link">Защита</a>
+        <a href="#" class="footer-link">Плавание</a>
+        <a href="#" class="footer-link">Фитнес / Йога</a>
+      </div>
+    </div>
+
+    <div>
+      <div class="footer-col-title">Бренды</div>
+      <div class="footer-links">
+        <a href="#" class="footer-link">RDX</a>
+        <a href="#" class="footer-link">VENUM</a>
+        <a href="#" class="footer-link">EVERLAST</a>
+        <a href="#" class="footer-link">TWINS</a>
+        <a href="#" class="footer-link">GREEN HILL</a>
+        <a href="#" class="footer-link">BAD BOY</a>
+        <a href="#" class="footer-link">UFC</a>
+        <a href="#" class="footer-link">ROOMAIF</a>
+      </div>
+    </div>
+
+    <div>
+      <div class="footer-col-title">Информация</div>
+      <div class="footer-links">
+        <a href="#why" class="footer-link">О магазине</a>
+        <a href="#contact" class="footer-link">Адрес и контакты</a>
+        <a href="https://prom.ua/c2948527-magazin-extreme-sport.html" target="_blank" class="footer-link">Отзывы</a>
+        <a href="#" class="footer-link">Доставка и оплата</a>
+        <a href="#" class="footer-link">Гарантия и возврат</a>
+        <a href="#" class="footer-link">Оптовые заказы</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p class="footer-copy">© 2026 <span>Extreme Sport</span> · Одесса · Все права защищены</p>
+    <a href="https://prom.ua/c2948527-magazin-extreme-sport.html" target="_blank" class="prom-link">Магазин на Prom.ua →</a>
+  </div>
+</footer>
+
+<script>
+// ═══ CUSTOM CURSOR ═══
+const cursor = document.getElementById('cursor');
+const ring = document.getElementById('cursor-ring');
+let mx=0,my=0,rx=0,ry=0;
+document.addEventListener('mousemove',e=>{
+  mx=e.clientX; my=e.clientY;
+  cursor.style.left=mx+'px'; cursor.style.top=my+'px';
+});
+function animRing(){
+  rx+=(mx-rx)*0.12; ry+=(my-ry)*0.12;
+  ring.style.left=rx+'px'; ring.style.top=ry+'px';
+  requestAnimationFrame(animRing);
+}
+animRing();
+document.querySelectorAll('a,button').forEach(el=>{
+  el.addEventListener('mouseenter',()=>{
+    cursor.style.width='20px';cursor.style.height='20px';
+    ring.style.width='52px';ring.style.height='52px';ring.style.opacity='0.9';
+  });
+  el.addEventListener('mouseleave',()=>{
+    cursor.style.width='12px';cursor.style.height='12px';
+    ring.style.width='36px';ring.style.height='36px';ring.style.opacity='0.6';
+  });
+});
+
+// ═══ HEADER SCROLL ═══
+window.addEventListener('scroll',()=>{
+  document.getElementById('header').classList.toggle('scrolled',scrollY>50);
+});
+
+// ═══ MOBILE NAV ═══
+document.getElementById('burgerBtn').addEventListener('click',()=>{
+  document.getElementById('mobileNav').classList.add('open');
+});
+document.getElementById('closeNav').addEventListener('click',()=>{
+  document.getElementById('mobileNav').classList.remove('open');
+});
+document.querySelectorAll('.mobile-nav a').forEach(a=>{
+  a.addEventListener('click',()=>document.getElementById('mobileNav').classList.remove('open'));
+});
+
+// ═══ SCROLL REVEAL ═══
+const revealObs = new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');}});
+},{threshold:0.1});
+document.querySelectorAll('.reveal').forEach(el=>revealObs.observe(el));
+
+// ═══ PRODUCTS GRID ═══
+const products = [
+  {id:1409894866,name:"Ракета DONIC Waldner Line 600",price:"600",image:"https://images.prom.ua/5767607913_w400_h400_raketa-donic-waldner.jpg",url:"https://prom.ua/p1409894866-raketa-donic-waldner.html"},
+  {id:1409938002,name:"Боксёрские перчатки UFC 12oz",price:"1 950",image:"https://images.prom.ua/6585707232_w400_h400_boksyorskie-perchatki-ufc.jpg",url:"https://prom.ua/p1409938002-boksyorskie-perchatki-ufc.html"},
+  {id:1401480088,name:"Ролик для пресса",price:"620",image:"https://images.prom.ua/3128832964_w400_h400_rolik-dlya-pressa.jpg",url:"https://prom.ua/p1401480088-rolik-dlya-pressa.html"},
+  {id:1465303824,name:"Защита голени и стопы",price:"2 150",image:"https://images.prom.ua/5936244195_w400_h400_zaschita-goleni-i.jpg",url:"https://prom.ua/p1465303824-zaschita-goleni-stopy.html"},
+  {id:1465304633,name:"Защита голени и стопы ROOMAIF",price:"1 350",image:"https://images.prom.ua/6801348180_w400_h400_zaschita-goleni-i.jpg",url:"https://prom.ua/p1465304633-zaschita-goleni-stopy.html"},
+  {id:1465309495,name:"Защита голени и стопы RDX",price:"1 690",image:"https://images.prom.ua/5936267574_w400_h400_zaschita-goleni-i.jpg",url:"https://prom.ua/p1465309495-zaschita-goleni-stopy.html"},
+  {id:1574300656,name:"Защита паха EVERLAST",price:"230",image:"https://images.prom.ua/3641262225_w400_h400_zaschita-paha-everlast.jpg",url:"https://prom.ua/p1574300656-zaschita-paha-everlast.html"},
+  {id:1409931246,name:"Боксёрские перчатки TWINS",price:"1 710",image:"https://images.prom.ua/4225928368_w400_h400_boksyorskie-perchatki-twins.jpg",url:"https://prom.ua/p1409931246-boksyorskie-perchatki-twins.html"},
+  {id:1423586310,name:"Боксёрские перчатки VENUM",price:"1 100",image:"https://images.prom.ua/3549385832_w400_h400_boksyorskie-perchatki-venum.jpg",url:"https://prom.ua/p1423586310-boksyorskie-perchatki-venum.html"},
+  {id:1423588015,name:"Боксёрские перчатки BAD BOY 12oz",price:"1 550",image:"https://images.prom.ua/3147309360_w400_h400_boksyorskie-perchatki-bad.jpg",url:"https://prom.ua/p1423588015-boksyorskie-perchatki-bad.html"},
+  {id:1431244428,name:"Детские боксёрские перчатки 6oz",price:"780",image:"https://images.prom.ua/3172289139_w400_h400_detskie-boksyorskie-perchatki.jpg",url:"https://prom.ua/p1431244428-detskie-boksyorskie-perchatki.html"},
+  {id:1436495130,name:"Боксёрские перчатки EVERLAST",price:"1 100",image:"https://images.prom.ua/6455602796_w400_h400_boksyorskie-perchatki-everlast.jpg",url:"https://prom.ua/p1436495130-boksyorskie-perchatki-everlast.html"},
+  {id:2003640956,name:"Комплект компрессионный GREEN HILL XXL",price:"1 190",image:"https://images.prom.ua/6832991360_w400_h400_komplekt-kompressionnyj-green.jpg",url:"https://prom.ua/p2003640956-komplekt-kompressionnyj-green.html"},
+  {id:2601731872,name:"Шорты RDX",price:"680",image:"https://images.prom.ua/6640326058_w400_h400_shorty-rdx.jpg",url:"https://prom.ua/p2601731872-shorty-rdx.html"},
+  {id:1757721159,name:"Перчатки для ММА",price:"800",image:"https://images.prom.ua/4230893038_w400_h400_perchatki-dlya-mma.jpg",url:"https://prom.ua/p1757721159-perchatki-dlya-mma.html"},
+  {id:2198062822,name:"Перчатки боксёрские RDX",price:"2 400",image:"https://images.prom.ua/6583535248_w400_h400_perchatki-boksyorskie-rdx.jpg",url:"https://prom.ua/p2198062822-perchatki-boksyorskie-rdx.html"},
+  {id:2198177040,name:"Перчатки для единоборств RDX",price:"1 990",image:"https://images.prom.ua/5765743306_w400_h400_perchatki-dlya-edinoborstv.jpg",url:"https://prom.ua/p2198177040-perchatki-dlya-edinoborstv.html"},
+  {id:2198192778,name:"Перчатки для бокса RDX 14oz",price:"2 400",image:"https://images.prom.ua/7219876379_w400_h400_perchatki-dlya-boksa.jpg",url:"https://prom.ua/p2198192778-perchatki-dlya-boksa.html"},
+  {id:1577286585,name:"Перчатки для тхэквондо",price:"450",image:"https://images.prom.ua/6733556344_w400_h400_perchatki-dlya-thekvondo.jpg",url:"https://prom.ua/p1577286585-perchatki-dlya-thekvondo.html"},
+  {id:2865550073,name:"Защита голени и стопы RDX",price:"1 690",image:"https://images.prom.ua/6995726020_w400_h400_zaschita-goleni-i.jpg",url:"https://prom.ua/p2865550073-zaschita-goleni-stopy.html"},
+  {id:2865552409,name:"Защита голеностопа RDX",price:"1 690",image:"https://images.prom.ua/6995729218_w400_h400_zaschita-golenostopa-rdx.jpg",url:"https://prom.ua/p2865552409-zaschita-golenostopa-rdx.html"},
+  {id:2384559366,name:"Перчатки для единоборств",price:"1 730",image:"https://images.prom.ua/6583568223_w400_h400_perchatki-dlya-edinoborstv.jpg",url:"https://prom.ua/p2384559366-perchatki-dlya-edinoborstv.html"},
+  {id:2348135995,name:"Боксёрские перчатки RDX",price:"2 400",image:"https://images.prom.ua/6585726426_w400_h400_boksyorskie-perchatki-rdx.jpg",url:"https://prom.ua/p2348135995-boksyorskie-perchatki-rdx.html"},
+  {id:2242807702,name:"Перчатки для единоборств RDX",price:"1 990",image:"https://images.prom.ua/6597389628_w400_h400_perchatki-dlya-edinoborstv.jpg",url:"https://prom.ua/p2242807702-perchatki-dlya-edinoborstv.html"},
+];
+
+const grid = document.getElementById('productsGrid');
+products.forEach((p,i)=>{
+  const isNew = i < 4;
+  grid.innerHTML += `
+    <a href="${p.url}" target="_blank" class="product-card reveal reveal-delay-${(i%4)+1}">
+      <div class="product-img-wrap">
+        <img src="${p.image}" alt="${p.name}" class="product-img" loading="lazy" onerror="this.src='https://via.placeholder.com/400x400/161616/444?text=EXTREME+SPORT'"/>
+        ${isNew ? '<span class="product-badge">Новинка</span>' : ''}
+      </div>
+      <div class="product-info">
+        <div class="product-name">${p.name}</div>
+        <div class="product-footer">
+          <div class="product-price">${p.price}<span>₴</span></div>
+          <a href="${p.url}" target="_blank" class="btn-buy">→</a>
+        </div>
+      </div>
+    </a>`;
+});
+// Re-observe new cards
+document.querySelectorAll('.product-card.reveal').forEach(el=>revealObs.observe(el));
+</script>
+</body>
+</html>
